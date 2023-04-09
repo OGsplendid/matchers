@@ -1,0 +1,32 @@
+{
+  "name": "1-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OGsplendid/clean-functions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OGsplendid/clean-functions/issues"
+  },
+  "homepage": "https://github.com/OGsplendid/clean-functions#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-jest": "^29.5.0",
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "jest": "^29.5.0"
+  },
+  "dependencies": {
+    "core-js": "^3.30.0"
+  }
+}
