@@ -1,23 +1,22 @@
 {
-  "name": "1-4",
+  "name": "matchers",
   "version": "1.0.0",
-  "description": "",
+  "description": "[![Build status](https://ci.appveyor.com/api/projects/status/qkiv84ho8eof9g06?svg=true)](https://ci.appveyor.com/project/OGsplendid/clean-functions)",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "jest",
-    "prepare": "husky install"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OGsplendid/clean-functions.git"
+    "url": "git+https://github.com/OGsplendid/matchers.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/OGsplendid/clean-functions/issues"
+    "url": "https://github.com/OGsplendid/matchers/issues"
   },
-  "homepage": "https://github.com/OGsplendid/clean-functions#readme",
+  "homepage": "https://github.com/OGsplendid/matchers#readme",
   "devDependencies": {
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.4",
@@ -25,7 +24,6 @@
     "babel-jest": "^29.5.0",
     "eslint": "^8.38.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "husky": "^8.0.3",
     "jest": "^29.5.0"
   },
   "dependencies": {

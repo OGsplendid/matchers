@@ -1,27 +1,15 @@
-import checkHealth from '../index';
+import rangeByHealth from '../index';
 
-// test('checking health', () => {
-//   const character = { name: 'Knight', health: 75 };
-//   expect(checkHealth(character)).toBe('healthy');
-// });
-
-test.each([
-  ['healthy',
-    {
-      name: 'Mage',
-      health: 70,
-    }, 'healthy'],
-  ['wounded',
-    {
-      name: 'Swordman',
-      health: 25,
-    }, 'wounded'],
-  ['critical',
-    {
-      name: 'Bowman',
-      health: 12,
-    }, 'critical'],
-])('testing health with each option', (_, character, wellbeing) => {
-  const result = checkHealth(character);
-  expect(result).toBe(wellbeing);
+test('ranging characters by health in descending order', () => {
+  const heroes = [
+    { name: 'мечник', health: 10 },
+    { name: 'маг', health: 100 },
+    { name: 'лучник', health: 80 },
+  ];
+  const sortedHeroes = [
+    { name: 'маг', health: 100 },
+    { name: 'лучник', health: 80 },
+    { name: 'мечник', health: 10 },
+  ];
+  expect(rangeByHealth(heroes)).toEqual(sortedHeroes);
 });
